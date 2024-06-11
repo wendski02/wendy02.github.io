@@ -3,8 +3,11 @@
 
 /* VARIABLE */
 :root {
-    --primary-color: #bd571c;
+    --primary-color: #037367;
     --dark-color: #0f0f0f;
+    --sangria-color: #00281F;
+    --army-color: #7B895B;
+    --gray-color: #cacaca;
 
     --h1-font-size: 40px;
     --h2-font-size: 32px;
@@ -40,6 +43,11 @@ section .section-title {
 
 .btn-orange {
     background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: var(--dark-color);
     color: white;
 }
 
@@ -89,7 +97,7 @@ section .section-title {
     transform: rotate(-40deg);
 }
 
-.header-section .header-img {
+.header-section .header-img, .skills-section .skills-img {
     width: 90%;
 }
 
@@ -99,3 +107,39 @@ section .section-title {
     width: 100%;
     object-fit: cover;
 }
+
+.section-title .card {
+    color: var(--sangria-color);
+}
+
+.portofolio-section {
+    background-color: var(--army-color);
+}
+
+@media screen and (max-width: 769px) {
+    .portofolio-section .card .card-img-top {
+        height: 100px;
+    }   
+}
+
+/* SKILLS */
+
+.skills-section {
+    background-color: var(--sangria-color);
+}
+
+.skills-section .progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+
+.skills-section .progress-bar {
+    background-color: var(--army-color);
+}
+
+/* CONTACT */
+/* .contact-section {
+    background-color: var(--army-color);
+} */
